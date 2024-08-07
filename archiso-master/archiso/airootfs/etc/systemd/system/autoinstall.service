@@ -1,0 +1,10 @@
+[Unit]
+Description=Arch Linux Auto Installer
+
+[Service]
+Type=oneshot
+ExecStart=/root/autoinstall.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
